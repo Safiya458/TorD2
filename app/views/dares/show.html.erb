@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dare %>
+
+<div>
+  <%= link_to "Edit this dare", edit_dare_path(@dare) %> |
+  <%= link_to "Back to dares", dares_path %>
+
+  <%= button_to "Destroy this dare", @dare, method: :delete %>
+</div>

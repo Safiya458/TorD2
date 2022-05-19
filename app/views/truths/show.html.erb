@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @truth %>
+
+<div>
+  <%= link_to "Edit this truth", edit_truth_path(@truth) %> |
+  <%= link_to "Back to truths", truths_path %>
+
+  <%= button_to "Destroy this truth", @truth, method: :delete %>
+</div>

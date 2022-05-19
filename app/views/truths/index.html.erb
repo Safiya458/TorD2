@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Truths</h1>
+
+<div id="truths">
+  <% @truths.each do |truth| %>
+    <%= render truth %>
+    <p>
+      <%= link_to "Show this truth", truth %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New truth", new_truth_path %>
